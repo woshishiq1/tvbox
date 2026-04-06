@@ -12,11 +12,11 @@
       "searchable": 0,
       "changeable": 0,
       "indexs": 0,
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy/天神小屋.png"
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/天神小屋.png"
     },
     {
       "key": "配置中心",
-      "name": "🌐配置中心｜4.03版",
+      "name": "🌐配置中心｜4.06版",
       "type": 3,
       "api": "csp_Config",
       "searchable": 0,
@@ -31,7 +31,7 @@
       "name": "🚀豆瓣｜嗷呜弹幕｜搜索自启",
       "key": "GoConfig",
       "type": 3,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy/lib/awdm.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm.png",
       "api": "csp_GoConfigAmns",
       "indexs": 1,
       "searchable": 1,
@@ -52,14 +52,248 @@
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/dgyy.png"
     },
     {
-      "key": "极影",
-      "name": "❤烈羽云｜4K测试",
+      "key": "多多",
+      "name": "❤多多｜4K测试",
       "type": 3,
-      "api": "csp_AppYsV2",
+      "api": "csp_AweSomeGuard",
       "searchable": 1,
       "quickSearch": 1,
+      "changeable": 1,
       "filterable": 1,
-      "ext": "http://101.201.171.207:802/api.php/app/"
+      "ext": {
+        "sp": "DuoDuo",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/qk.png",
+        "uc_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/uc.png",
+        "baidu_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bd.png"
+      },
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ok.png"
+    },
+    {
+      "key": "二小",
+      "name": "❤二小｜4K测试",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "ErXiao",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/qk.png",
+        "uc_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/uc.png",
+        "baidu_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bd.png"
+      },
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ok.png"
+    },
+    {
+      "key": "玩偶",
+      "name": "❤玩偶｜4K测试",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "sp": "Wogg",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/qk.png",
+        "uc_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/uc.png",
+        "baidu_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bd.png"
+      },
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ok.png"
+    },
+    {
+      "key": "立播版",
+      "name": "❤立播｜4K测试",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "sp": "Libvio",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/qk.png",
+        "uc_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/uc.png",
+        "baidu_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bd.png"
+      },
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ok.png"
+    },
+    {
+      "key": "蜡笔",
+      "name": "❤蜡笔｜4K测试",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "Labi",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/qk.png",
+        "uc_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/uc.png",
+        "baidu_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bd.png"
+      },
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ok.png"
+    },
+    {
+      "key": "木偶",
+      "name": "❤木偶｜4K测试",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "Muou",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/qk.png",
+        "uc_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/uc.png",
+        "baidu_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bd.png"
+      },
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ok.png",
+      "categories": [
+        "木偶动影",
+        "木偶剧集",
+        "木偶电漫",
+        "木偶短剧",
+        "木偶纪录片"
+      ]
+    },
+    {
+      "key": "小飒",
+      "name": "❤小飒｜4K测试",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "Xsayang",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/qk.png",
+        "uc_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/uc.png",
+        "baidu_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bd.png"
+      },
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ok.png"
+    },
+    {
+      "key": "至臻",
+      "name": "❤至臻｜4K测试",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "ZhiZhen",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/qk.png",
+        "uc_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/uc.png",
+        "baidu_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bd.png"
+      },
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ok.png"
+    },
+    {
+      "key": "虎斑",
+      "name": "❤虎斑｜4K测试",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "HuBan",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/qk.png",
+        "uc_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/uc.png",
+        "baidu_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bd.png"
+      },
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ok.png"
+    },
+    {
+      "key": "SeedHub",
+      "name": "❤种子｜4K测试",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "SeedHub",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/qk.png",
+        "uc_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/uc.png",
+        "baidu_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bd.png"
+      },
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ok.png"
+    },
+    {
+      "key": "双星",
+      "name": "❤双星｜4K测试",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      },
+      "ext": {
+        "sp": "Star2",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/qk.png",
+        "uc_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/uc.png",
+        "baidu_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bd.png"
+      },
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ok.png"
+    },
+    {
+      "key": "光影",
+      "name": "❤光影｜4K测试",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "sp": "Guanying",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/qk.png",
+        "uc_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/uc.png",
+        "baidu_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bd.png"
+      },
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ok.png"
+    },
+    {
+      "key": "云集",
+      "name": "❤云集｜4K测试",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "sp": "YunJi",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/qk.png",
+        "uc_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/uc.png",
+        "baidu_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bd.png"
+      },
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ok.png"
+    },
+    {
+      "key": "4K指南",
+      "name": "❤指南｜4K测试",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 0,
+      "changeable": 0,
+      "filterable": 0,
+      "ext": {
+        "sp": "Zn4k",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/qk.png",
+        "uc_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/uc.png",
+        "baidu_cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bd.png"
+      },
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ok.png"
     },
     {
       "key": "人人影视",
@@ -72,54 +306,18 @@
       "filterable": 1
     },
     {
-      "key": "蜡笔",
-      "name": "❤蜡笔｜4K高兴",
-      "type": 3,
-      "api": "csp_ZC4K",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/ZC4KK.png",
-      "ext": "YUhSMGNEb3ZMekV4Tmk0Mk1pNHhNek11T0RZNk5UWTJPREV2VkRRdlZEVXZZWEJwTWk1d2FIQS9jMmwwWlQxc1lXSnBNeU1qSTJ4aFlta3o="
-    },
-    {
-      "key": "木偶",
-      "name": "❤木偶｜4K高兴",
-      "type": 3,
-      "api": "csp_ZC4K",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/ZC4KK.png",
-      "ext": "YUhSMGNEb3ZMekV4Tmk0Mk1pNHhNek11T0RZNk5UWTJPREV2VkRRdlZEWXZZWEJwTWk1d2FIQS9jMmwwWlQxdGRXOTFJeU1qYlhWdmRRPT0=",
-      "categories": [
-        "动漫",
-        "电影",
-        "剧集",
-        "综艺",
-        "纪录片"
-      ]
-    },
-    {
       "key": "藤藤",
       "name": "❤藤藤｜4K测试",
       "type": 3,
       "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/drpy2.min.js",
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy/lib/藤藤.png"
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/藤藤.png"
     },
     {
       "key": "茫茫",
       "name": "❤茫茫｜4K测试",
       "type": 3,
       "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/drpy2.min.js",
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy/lib/茫茫.png"
-    },
-    {
-      "key": "云朵",
-      "name": "♨️云朵｜4k线路",
-      "type": 3,
-      "api": "csp_AppGet",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": {
-        "url": "https://yd4kcms.yd4k.top",
-        "dataKey": "Tpmm9FD99lJ8Dexa",
-        "dataIv": "Tpmm9FD99lJ8Dexa"
-      }
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/茫茫.png"
     },
     {
       "key": "星空",
@@ -135,6 +333,36 @@
       }
     },
     {
+      "key": "顾我",
+      "name": "♨️顾我｜4K线路",
+      "type": 3,
+      "api": "csp_AppQi",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": {
+        "url": "http://117.50.204.35:8090",
+        "dataKey": "ca94b06ca3c7d80e",
+        "dataIv": "ca94b06ca3c7d80e",
+        "ua": "okhttp/3.10.0"
+      }
+    },
+    {
+      "key": "金牌",
+      "name": "♨️金牌｜4K线路",
+      "type": 3,
+      "api": "csp_AppQi",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": {
+        "url": "https://qj3.ggtvb.cc",
+        "dataKey": "eecbio48dsq13kkk",
+        "dataIv": "eecbio48dsq13kkk",
+        "search": "searchList4",
+        "init": "initV122",
+        "ua": "okhttp/3.10.0"
+      }
+    },
+    {
       "key": "齐齐",
       "name": "♨️齐齐｜4K线路",
       "type": 3,
@@ -142,7 +370,7 @@
       "searchable": 1,
       "changeable": 1,
       "ext": {
-        "url": "http://110.42.67.221:8009",
+        "url": "http://110.42.67.221:8002",
         "dataKey": "123456789abcdefg",
         "dataIv": "123456789abcdefg",
         "init": "initV122",
@@ -196,35 +424,6 @@
       "filterable": 1
     },
     {
-      "key": "爱影视",
-      "name": "🌀爱影｜1920",
-      "type": 3,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/vox.png",
-      "api": "csp_AppGet",
-      "ext": {
-        "host": "https://rxysyyds.oss-cn-chengdu.aliyuncs.com/qiji.txt",
-        "datakey": "sjvlwnhk6h9znl61",
-        "ua": "okhttp/3.10.0",
-        "api": 2
-      }
-    },
-    {
-      "key": "金牌",
-      "name": "🌀金牌｜1920",
-      "type": 3,
-      "api": "csp_AppQi",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": {
-        "url": "https://qj3.ggtvb.cc",
-        "dataKey": "eecbio48dsq13kkk",
-        "dataIv": "eecbio48dsq13kkk",
-        "search": "searchList4",
-        "init": "initV122",
-        "ua": "okhttp/3.10.0"
-      }
-    },
-    {
       "key": "雄鹰",
       "name": "🌀雄鹰｜1920",
       "type": 3,
@@ -265,39 +464,6 @@
       "ext": {
         "sp": "HanXiaoQuan"
       }
-    },
-    {
-      "key": "酷酷",
-      "name": "🌀酷酷｜1280",
-      "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/drpy2.min.js",
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/酷酷.png",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 1
-    },
-    {
-      "key": "奇奇",
-      "name": "🌀奇奇｜1280",
-      "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/drpy2.min.js",
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/奇奇.png",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 1
-    },
-    {
-      "key": "甜圈短剧",
-      "name": "🎬甜圈｜短剧",
-      "type": 3,
-      "api": "csp_TianquanDJ",
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "genre": "shortdrama"
     },
     {
       "key": "盒马短剧",
@@ -790,7 +956,7 @@
     },
     {
       "key": "世界听书",
-      "name": "📻世界┃听书",
+      "name": "📻世界｜听书",
       "type": 3,
       "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/ok.png",
       "api": "csp_AweSomeGuard",
@@ -799,6 +965,19 @@
       "changeable": 0,
       "ext": {
         "sp": "BookTing"
+      }
+    },
+    {
+      "key": "听悠",
+      "name": "📻听悠｜听书",
+      "type": 3,
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/ok.png",
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": {
+        "sp": "TingYou"
       }
     },
     {
@@ -1168,19 +1347,6 @@
       }
     },
     {
-      "key": "AList",
-      "name": "📁AList｜合集",
-      "type": 3,
-      "api": "csp_Alist",
-      "searchable": 1,
-      "filterable": 1,
-      "changeable": 0,
-      "style": {
-        "type": "list"
-      },
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/alist.png"
-    },
-    {
       "key": "急救教学",
       "name": "🚑️急救｜教学",
       "type": 3,
@@ -1280,39 +1446,7 @@
       "api": "csp_QuPanSo"
     }
   ],
-  "parses": [
-    {
-      "name": "4K高兴测试",
-      "type": 1,
-      "url": "http://php.xuan666.icu/高兴公开/jx/api99.php?url=",
-      "ext": {
-        "flag": [
-          "原彩4k",
-          "原彩4k2",
-          "baidu",
-          "baidu2",
-          "臻彩4k",
-          "臻彩4k2",
-          "会员专享",
-          "qq",
-          "腾讯",
-          "腾讯视频",
-          "mgtv",
-          "imgo",
-          "芒果",
-          "qiyi",
-          "iqiyi",
-          "爱奇艺",
-          "奇艺",
-          "youku",
-          "优酷",
-          "bilibili",
-          "bilibili1",
-          "B站"
-        ]
-      }
-    }
-  ],
+  "parses": [],
   "rules": [
     {
       "name": "农民",
