@@ -1,46 +1,41 @@
 const fs = require("fs");
 const path = require("path");
 
-// 去除注释和 BOM
+/**
+ * 1. 辅助函数：去除 JSON 中的注释和 BOM 头
+ */
 function removeComments(str) {
   str = str.replace(/\/\*[\s\S]*?\*\//g, "");
   str = str.replace(/(^|[^:])\/\/.*$/gm, "$1");
   return str;
 }
+
 function removeBOM(str) {
   return str.charCodeAt(0) === 0xFEFF ? str.slice(1) : str;
 }
 
 /**
- * 优先识别 ZIP 解压后的固定目录 “缘起【天神IY】”
+ * 2. 自动识别解压后的文件夹
  */
 function findExtractedFolder() {
   const EXPECTED = "缘起【天神IY】";
-
   if (fs.existsSync(EXPECTED) && fs.statSync(EXPECTED).isDirectory()) {
     return EXPECTED;
   }
-
   const dirs = fs.readdirSync(".").filter(d =>
-    fs.statSync(d).isDirectory() && !d.startsWith(".")
+    fs.statSync(d).isDirectory() && !d.startsWith(".") && d !== "node_modules"
   );
-
-  if (dirs.length === 1) {
-    return dirs[0];
-  }
-
-  return null;
+  return dirs.length === 1 ? dirs[0] : null;
 }
 
 /**
- * 递归查找 api.json
+ * 3. 递归查找 api.json 文件
  */
 function findApiJson(dir) {
   const entries = fs.readdirSync(dir);
   for (const e of entries) {
     const full = path.join(dir, e);
     const stat = fs.statSync(full);
-
     if (stat.isDirectory()) {
       const found = findApiJson(full);
       if (found) return found;
@@ -52,22 +47,39 @@ function findApiJson(dir) {
 }
 
 /**
- * 修复相对路径
- * ⭐【修改处】：将原来的 Gitee 链接替换为新的 GitHub 镜像链接
+ * 4. 路径修复核心逻辑 (精准替换版)
  */
 function fixPaths(obj) {
-  // 定义新的前缀
-  const NEW_PREFIX = "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/master/cpu_iy/";
+  // 定义两个不同的 GitHub 目标前缀
+  const GITHUB_IY_TARGET = "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/master/cpu_iy/";
+  const GITHUB_LIB_TARGET = "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/master/cpu_iy2/lib/";
+  
+  // 定义需要识别的 Gitee 原始前缀
+  const GITEE_IY_PREFIX = "https://gitee.com/cpu-iy/iy/raw/master/";
+  const GITEE_LIB_PREFIX_WITH_LIB = "https://gitee.com/cpu-iy/lib/raw/master/lib/";
 
   if (typeof obj === "string") {
+    // A. 优先替换带 /lib/ 的长路径 (对应 cpu_iy2)
+    if (obj.startsWith(GITEE_LIB_PREFIX_WITH_LIB)) {
+      return obj.replace(GITEE_LIB_PREFIX_WITH_LIB, GITHUB_LIB_TARGET);
+    }
+
+    // B. 替换 IY 仓库路径 (对应 cpu_iy)
+    if (obj.startsWith(GITEE_IY_PREFIX)) {
+      return obj.replace(GITEE_IY_PREFIX, GITHUB_IY_TARGET);
+    }
+
+    // C. 处理相对路径 ./ (默认指向 IY 仓库根目录)
     if (obj.startsWith("./")) {
-      // 移除 ./ 并拼接新前缀
-      return `${NEW_PREFIX}${obj.slice(2)}`;
+      return `${GITHUB_IY_TARGET}${obj.slice(2)}`;
     }
+
+    // D. 处理相对路径 ../ (通常指代 lib 目录)
     if (obj.startsWith("../")) {
-      // 移除 ../ 并拼接新前缀
-      return `${NEW_PREFIX}${obj.slice(3)}`;
+      // 如果原作者用 ../ 指向 lib，通常对应 cpu_iy2/lib/
+      return `${GITHUB_LIB_TARGET}${obj.slice(3)}`;
     }
+    
     return obj;
   }
   
@@ -85,38 +97,39 @@ function fixPaths(obj) {
   return obj;
 }
 
+/**
+ * 5. 执行主流程
+ */
 try {
-  // 1) 自动识别解压文件夹
+  console.log("🚀 开始精准路径替换...");
+
   const root = findExtractedFolder();
   if (!root) {
-    console.error("❌ 未找到解压后的文件夹（未检测到“缘起【天神IY】”）");
+    console.error("❌ 未找到解压文件夹");
     process.exit(1);
   }
-  console.log("📁 解压目录:", root);
 
-  // 2) 查找 api.json
   const apiPath = findApiJson(root);
   if (!apiPath) {
-    console.error("❌ 未找到 api.json（已递归搜索所有子目录）");
+    console.error("❌ 未找到 api.json");
     process.exit(1);
   }
-  console.log("🔍 找到 api.json:", apiPath);
 
-  // 3) 去除注释和 BOM
   let raw = fs.readFileSync(apiPath, "utf8");
   raw = removeBOM(removeComments(raw));
+  
   const parsed = JSON.parse(raw);
-
-  // 4) 修复路径
   const fixed = fixPaths(parsed);
 
-  // 5) 输出
   fs.writeFileSync("天神IY.txt", JSON.stringify(fixed, null, 2), "utf8");
-  console.log("✅ 成功生成 天神IY.txt");
-  console.log("🔗 已将链接前缀替换为 GitHub 镜像地址");
+  
+  console.log("------------------------------------------");
+  console.log("✅ 替换成功！已生成: 天神IY.txt");
+  console.log("1. Gitee .../lib/lib/ -> GitHub .../cpu_iy2/lib/");
+  console.log("2. Gitee .../iy/ -> GitHub .../cpu_iy/");
+  console.log("------------------------------------------");
 
 } catch (e) {
-  console.error("❌ 解析失败");
-  console.error(e);
+  console.error("❌ 运行异常:", e.message);
   process.exit(1);
 }
