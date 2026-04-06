@@ -12,18 +12,15 @@ function removeBOM(str) {
 }
 
 /**
- * ⭐【改动 1】：优先识别 ZIP 解压后的固定目录 “缘起【天神IY】”
- * ⭐【改动 2】：如果不存在，则寻找唯一的非隐藏目录
+ * 优先识别 ZIP 解压后的固定目录 “缘起【天神IY】”
  */
 function findExtractedFolder() {
   const EXPECTED = "缘起【天神IY】";
 
-  // 优先使用固定目录名
   if (fs.existsSync(EXPECTED) && fs.statSync(EXPECTED).isDirectory()) {
     return EXPECTED;
   }
 
-  // fallback：寻找唯一的非隐藏目录
   const dirs = fs.readdirSync(".").filter(d =>
     fs.statSync(d).isDirectory() && !d.startsWith(".")
   );
@@ -36,7 +33,7 @@ function findExtractedFolder() {
 }
 
 /**
- * ⭐【改动 3】：递归查找 api.json（保持不变）
+ * 递归查找 api.json
  */
 function findApiJson(dir) {
   const entries = fs.readdirSync(dir);
@@ -54,20 +51,30 @@ function findApiJson(dir) {
   return null;
 }
 
-// 修复相对路径（保持不变）
+/**
+ * 修复相对路径
+ * ⭐【修改处】：将原来的 Gitee 链接替换为新的 GitHub 镜像链接
+ */
 function fixPaths(obj) {
+  // 定义新的前缀
+  const NEW_PREFIX = "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/master/cpu_iy/";
+
   if (typeof obj === "string") {
     if (obj.startsWith("./")) {
-      return `https://gitee.com/cpu-iy/lib/raw/master/${obj.slice(2)}`;
+      // 移除 ./ 并拼接新前缀
+      return `${NEW_PREFIX}${obj.slice(2)}`;
     }
     if (obj.startsWith("../")) {
-      return `https://gitee.com/cpu-iy/lib/raw/master/${obj.slice(3)}`;
+      // 移除 ../ 并拼接新前缀
+      return `${NEW_PREFIX}${obj.slice(3)}`;
     }
     return obj;
   }
+  
   if (Array.isArray(obj)) {
     return obj.map(fixPaths);
   }
+  
   if (typeof obj === "object" && obj !== null) {
     const res = {};
     for (const [k, v] of Object.entries(obj)) {
@@ -106,6 +113,7 @@ try {
   // 5) 输出
   fs.writeFileSync("天神IY.txt", JSON.stringify(fixed, null, 2), "utf8");
   console.log("✅ 成功生成 天神IY.txt");
+  console.log("🔗 已将链接前缀替换为 GitHub 镜像地址");
 
 } catch (e) {
   console.error("❌ 解析失败");
