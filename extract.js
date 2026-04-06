@@ -1,36 +1,32 @@
 const fs = require("fs");
 const path = require("path");
 
-/**
- * 1. 基础预处理：清除干扰字符
- */
+// 去除注释和 BOM
 function removeComments(str) {
   str = str.replace(/\/\*[\s\S]*?\*\//g, "");
   str = str.replace(/(^|[^:])\/\/.*$/gm, "$1");
   return str;
 }
-
 function removeBOM(str) {
   return str.charCodeAt(0) === 0xFEFF ? str.slice(1) : str;
 }
 
-/**
- * 2. 自动定位解压文件夹
- */
+// 寻找解压目录
 function findExtractedFolder() {
   const EXPECTED = "缘起【天神IY】";
   if (fs.existsSync(EXPECTED) && fs.statSync(EXPECTED).isDirectory()) {
     return EXPECTED;
   }
   const dirs = fs.readdirSync(".").filter(d =>
-    fs.statSync(d).isDirectory() && !d.startsWith(".") && d !== "node_modules"
+    fs.statSync(d).isDirectory() && !d.startsWith(".")
   );
-  return dirs.length === 1 ? dirs[0] : null;
+  if (dirs.length === 1) {
+    return dirs[0];
+  }
+  return null;
 }
 
-/**
- * 3. 递归寻找 api.json
- */
+// 查找 api.json
 function findApiJson(dir) {
   const entries = fs.readdirSync(dir);
   for (const e of entries) {
@@ -47,81 +43,74 @@ function findApiJson(dir) {
 }
 
 /**
- * 4. 【核心逻辑】仓库精准映射转换
+ * ⭐【修改核心】：顺着原版逻辑，极简替换
  */
 function fixPaths(obj) {
-  // 定义仓库映射表
-  const REPO_MAP = {
-    // Gitee 仓库标识 : GitHub 对应目录
-    "cpu-iy/iy": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/master/cpu_iy/",
-    "cpu-iy/lib": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/master/cpu_iy2/"
-  };
+  // 定义加速后的 GitHub 根目录地址 (注意分支是 main)
+  const GITHUB_IY = "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy/";
+  const GITHUB_IY2 = "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/";
 
   if (typeof obj === "string") {
-    // 遍历映射表
-    for (const [giteeRepo, githubPrefix] of Object.entries(REPO_MAP)) {
-      const giteeFullPrefix = `https://gitee.com/${giteeRepo}/raw/master/`;
-      
-      if (obj.startsWith(giteeFullPrefix)) {
-        // 只替换仓库前缀，保留后面所有的子路径（如 /lib/藤藤.png 或 /lib/drpy2.min.js）
-        // 这样即便两个仓库都有 lib 文件夹，也会被准确分流到对应的 cpu_iy 或 cpu_iy2
-        return obj.replace(giteeFullPrefix, githubPrefix);
-      }
-    }
-
-    // 处理特殊的 spider.jar 强制定位 (如果它不在 gitee 链接里)
-    if (obj.includes("spider.jar") && !obj.includes("https")) {
-      return `${REPO_MAP["cpu-iy/lib"]}spider.jar`;
+    // 1. 替换直接写死的 Gitee iy 仓库地址 -> GitHub cpu_iy
+    if (obj.includes("gitee.com/cpu-iy/iy/raw/master/")) {
+      return obj.replace("https://gitee.com/cpu-iy/iy/raw/master/", GITHUB_IY);
     }
     
+    // 2. 替换直接写死的 Gitee lib 仓库地址 -> GitHub cpu_iy2
+    if (obj.includes("gitee.com/cpu-iy/lib/raw/master/")) {
+      return obj.replace("https://gitee.com/cpu-iy/lib/raw/master/", GITHUB_IY2);
+    }
+
+    // 3. 替换本地相对路径 (照搬原版逻辑，但前缀换成 GitHub cpu_iy2 加速地址)
+    // 这样 ./spider.jar 就会变成 https://ghfast.top/.../cpu_iy2/spider.jar
+    if (obj.startsWith("./")) {
+      return `${GITHUB_IY2}${obj.slice(2)}`;
+    }
+    if (obj.startsWith("../")) {
+      return `${GITHUB_IY2}${obj.slice(3)}`;
+    }
     return obj;
   }
-  
-  if (Array.isArray(obj)) return obj.map(fixPaths);
+
+  if (Array.isArray(obj)) {
+    return obj.map(fixPaths);
+  }
   if (typeof obj === "object" && obj !== null) {
     const res = {};
-    for (const [k, v] of Object.entries(obj)) res[k] = fixPaths(v);
+    for (const [k, v] of Object.entries(obj)) {
+      res[k] = fixPaths(v);
+    }
     return res;
   }
   return obj;
 }
 
-/**
- * 5. 主程序运行
- */
-async function run() {
-  try {
-    const root = findExtractedFolder();
-    if (!root) {
-      console.error("❌ 未找到解压文件夹，请确认解压后的目录在当前 JS 旁边。");
-      return;
-    }
-
-    const apiPath = findApiJson(root);
-    if (!apiPath) {
-      console.error("❌ 在文件夹中找不到 api.json。");
-      return;
-    }
-
-    console.log(`📂 读取配置: ${apiPath}`);
-    let raw = fs.readFileSync(apiPath, "utf8");
-    raw = removeBOM(removeComments(raw));
-    
-    let parsed = JSON.parse(raw);
-    const fixed = fixPaths(parsed);
-
-    // 写入新配置
-    const outputPath = "天神IY_GitHub最终版.txt";
-    fs.writeFileSync(outputPath, JSON.stringify(fixed, null, 2), "utf8");
-    
-    console.log("------------------------------------------");
-    console.log("✅ 转换成功！不再混淆不同仓库的 lib 文件夹。");
-    console.log(`📝 已保存: ${outputPath}`);
-    console.log("------------------------------------------");
-
-  } catch (error) {
-    console.error("❌ 运行出错:", error.message);
+try {
+  const root = findExtractedFolder();
+  if (!root) {
+    console.error("❌ 未找到解压后的文件夹（未检测到“缘起【天神IY】”）");
+    process.exit(1);
   }
-}
+  console.log("📁 解压目录:", root);
 
-run();
+  const apiPath = findApiJson(root);
+  if (!apiPath) {
+    console.error("❌ 未找到 api.json（已递归搜索所有子目录）");
+    process.exit(1);
+  }
+  console.log("🔍 找到 api.json:", apiPath);
+
+  let raw = fs.readFileSync(apiPath, "utf8");
+  raw = removeBOM(removeComments(raw));
+  const parsed = JSON.parse(raw);
+
+  const fixed = fixPaths(parsed);
+
+  fs.writeFileSync("天神IY.txt", JSON.stringify(fixed, null, 2), "utf8");
+  console.log("✅ 成功生成 天神IY.txt");
+
+} catch (e) {
+  console.error("❌ 解析失败");
+  console.error(e);
+  process.exit(1);
+}
