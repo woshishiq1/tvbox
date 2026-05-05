@@ -1,7 +1,7 @@
 {
-  "spider": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/spider.jar",
+  "spider": "./spider.jar",
   "wallpaper": "",
-  "logo": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/logo.png",
+  "logo": "./logo.png",
   "warningText": "",
   "lives": [
     {
