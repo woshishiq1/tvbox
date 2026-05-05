@@ -6,7 +6,7 @@ permissions:
 on:
   schedule:
     - cron: "0 */6 * * *"   # 每 6 小时运行一次
-  workflow_dispatch:        # 手动触发
+  workflow_dispatch:         # 手动触发
 
 jobs:
   build:
@@ -22,54 +22,56 @@ jobs:
           node-version: "18"
           cache: "npm"
 
-      # 清理旧目录（删除旧 zip 和同名文件夹）
+      # 清理旧目录
       - name: Clean old extracted folders
         run: |
           ZIP_NAME="缘起【天神IY】.zip"
           FOLDER_NAME="缘起【天神IY】"
           rm -rf "$ZIP_NAME" "$FOLDER_NAME" || true
 
-      # 下载 zip
+      # 下载 zip (从 GitHub 仓库下载)
       - name: Download zip
         run: |
           ZIP_NAME="缘起【天神IY】.zip"
-          URL="https://gitee.com/cpu-iy/iy/raw/master/$ZIP_NAME"
+          # 注意：GitHub 的 raw 地址格式如下
+          URL="https://raw.githubusercontent.com/IY-CPU/IY/main/$ZIP_NAME"
           
-          for i in {1..5}; do
-            # 新增 -f 参数: 遇到 404 等错误直接报错，不保存错误网页
-            # 新增 -H "User-Agent...": 伪装成浏览器，防止 Gitee 拦截 curl
-            curl -f -L --retry 5 --retry-delay 2 --max-time 60 \
-              -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
-              -o "$ZIP_NAME" "$URL" && break
-          done
+          curl -f -L --retry 5 --retry-delay 2 --max-time 60 \
+            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+            -o "$ZIP_NAME" "$URL" || {
+              echo "❌ $ZIP_NAME 下载失败，尝试检查分支名是否为 main 或文件是否存在"
+              exit 1
+            }
           
-          # 检查文件是否存在且大小大于 0 
           if [ ! -s "$ZIP_NAME" ]; then
-            echo "❌ $ZIP_NAME 下载失败或文件为空"
+            echo "❌ $ZIP_NAME 文件为空"
             exit 1
           fi
 
-      # 解压到同名文件夹
+      # 解压
       - name: Unzip to folder
         run: |
           ZIP_NAME="缘起【天神IY】.zip"
           FOLDER_NAME="缘起【天神IY】"
-
           mkdir -p "$FOLDER_NAME"
-          unzip -o "$ZIP_NAME" -d "$FOLDER_NAME" || {
-            echo "❌ 解压失败"
-            exit 1
-          }
+          unzip -o "$ZIP_NAME" -d "$FOLDER_NAME"
 
-      # 运行 extract.js
+      # 运行原始提取脚本
       - name: Extract JSON
         run: node extract.js || exit 1
 
-      # 调试输出
-      - name: Debug TXT
+      # --- 新增步骤：修改 lib 目录前缀 ---
+      # 使用 sed 替换 天神IY.txt 中的地址
+      # 逻辑：查找包含 /lib/ 的路径，并将其前缀统一替换为 https://ghfast.top/https://github.com/IY-CPU/IY/raw/main/lib/
+      - name: Fix lib paths
         run: |
-          ls -R .
-          cat 天神IY.txt || exit 1
+          if [ -f "天神IY.txt" ]; then
+            echo "正在优化 lib 路径..."
+            # 这里的正则匹配会寻找所有包含 ./lib/ 或旧域名的路径，统一替换为你的新目标地址
+            # 如果你的 extract.js 生成的是相对路径 ./lib/，则用下面这行：
+            sed -i 's|\./lib/|https://ghfast.top/https://github.com/IY-CPU/IY/raw/main/lib/|g' 天神IY.txt
+            # 如果生成的是带旧域名的绝对路径，请根据实际情况调整上面的 's|旧|新|g'
+          fi
 
       # 合并补丁
       - name: Merge JSON
@@ -79,7 +81,8 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          if git diff --quiet; then
+          git add .
+          if git diff --quiet HEAD; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -91,6 +94,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Auto-sync iy.zip & rebuild merged interface" || echo "No changes to commit"
+          git commit -m "Auto-sync from IY-CPU/IY & fix lib paths"
           git push
