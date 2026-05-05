@@ -6,7 +6,7 @@ permissions:
 on:
   schedule:
     - cron: "0 */6 * * *"   # 每 6 小时运行一次
-  workflow_dispatch:        # 手动触发
+  workflow_dispatch:         # 手动触发
 
 jobs:
   build:
@@ -28,35 +28,38 @@ jobs:
           ZIP_NAME="缘起【天神IY】.zip"
           FOLDER_NAME="缘起【天神IY】"
           rm -rf "$ZIP_NAME" "$FOLDER_NAME" || true
-      # 下载 zip
+
+      # 【仅修改此处】：下载 zip，换成 github 的 raw 地址
       - name: Download zip
         run: |
           ZIP_NAME="缘起【天神IY】.zip"
-          URL="https://gitee.com/cpu-iy/iy/raw/master/$ZIP_NAME"
+          # 替换为 GitHub 的 Raw 地址
+          URL="https://raw.githubusercontent.com/IY-CPU/IY/main/$ZIP_NAME"
           
           for i in {1..5}; do
-            # 新增 -f 参数: 遇到 404 等错误直接报错，不保存错误网页
-            # 新增 -H "User-Agent...": 伪装成浏览器，防止 Gitee 拦截 curl
+            # 移除针对 Gitee 的 UA 伪装，使用 GitHub 标准 Raw 拉取方式
             curl -f -L --retry 5 --retry-delay 2 --max-time 60 \
-              -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
               -o "$ZIP_NAME" "$URL" && break
           done
           
-          # 检查文件是否存在且大小大于 0 
+          # 检查文件是否存在且大小大于 0
           if [ ! -s "$ZIP_NAME" ]; then
             echo "❌ $ZIP_NAME 下载失败或文件为空"
             exit 1
           fi
+
       # 解压到同名文件夹
       - name: Unzip to folder
         run: |
           ZIP_NAME="缘起【天神IY】.zip"
           FOLDER_NAME="缘起【天神IY】"
+
           mkdir -p "$FOLDER_NAME"
           unzip -o "$ZIP_NAME" -d "$FOLDER_NAME" || {
             echo "❌ 解压失败"
             exit 1
           }
+
       # 运行 extract.js
       - name: Extract JSON
         run: node extract.js || exit 1
@@ -66,6 +69,7 @@ jobs:
         run: |
           ls -R .
           cat 天神IY.txt || exit 1
+
       # 合并补丁
       - name: Merge JSON
         run: node merge.js || exit 1
@@ -79,6 +83,7 @@ jobs:
           else
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
+
       # 推送到 GitHub
       - name: Commit and push to GitHub
         if: steps.changes.outputs.changed == 'true'
