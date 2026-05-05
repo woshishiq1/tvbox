@@ -1,7 +1,7 @@
 {
-  "spider": "./spider.jar",
+  "spider": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/spider.jar",
   "wallpaper": "https://wp.upx8.com/api.php",
-  "logo": "./logo.png",
+  "logo": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/logo.png",
   "warningText": "天神IY：资源来自网络，无盈利纯搬运分享！[所有内容仅供学习使用，请勿用于违法及商业用途，请勿付费购买]",
   "lives": [
     {
@@ -31,7 +31,7 @@
       "searchable": 0,
       "changeable": 0,
       "indexs": 0,
-      "ext": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/天神小屋.png"
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/天神小屋.png"
     },
     {
       "key": "配置中心",
@@ -50,7 +50,7 @@
       "name": "🚀豆瓣｜嗷呜弹幕｜搜索自启",
       "key": "GoConfig",
       "type": 3,
-      "jar": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm.png",
       "api": "csp_GoConfigAmns",
       "indexs": 1,
       "searchable": 1,
@@ -548,7 +548,7 @@
         "ratio": 1.433
       },
       "ext": {
-        "cookie": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
       }
     },
     {
@@ -1066,7 +1066,7 @@
       "key": "爱听音乐",
       "name": "📻爱听┃音乐",
       "type": 3,
-      "api": "./py/爱听音乐.py"
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/py/爱听音乐.py"
     },
     {
       "key": "世界听书",
@@ -1184,7 +1184,7 @@
       },
       "ext": {
         "json": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/哔哩合集.png",
-        "cookie": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
       }
     },
     {
@@ -1196,7 +1196,7 @@
       "quickSearch": 0,
       "filterable": 0,
       "ext": {
-        "cookie": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png",
         "json": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/哔哩演唱会.png"
       },
       "style": {
@@ -1213,7 +1213,7 @@
       "quickSearch": 0,
       "filterable": 0,
       "ext": {
-        "cookie": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png",
         "json": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/哔哩听书.png"
       },
       "style": {
@@ -1230,7 +1230,7 @@
       "quickSearch": 0,
       "filterable": 0,
       "ext": {
-        "cookie": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png",
         "json": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/哔哩相声.png"
       },
       "style": {
@@ -1247,7 +1247,7 @@
       "quickSearch": 0,
       "filterable": 0,
       "ext": {
-        "cookie": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png",
         "json": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/哔哩小品.png"
       },
       "style": {
@@ -1264,7 +1264,7 @@
       "quickSearch": 0,
       "filterable": 0,
       "ext": {
-        "cookie": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png",
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png",
         "json": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/哔哩戏曲.png"
       },
       "style": {
@@ -1282,7 +1282,7 @@
       "filterable": 1,
       "ext": {
         "json": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/少儿教育.png",
-        "cookie": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
       },
       "style": {
         "type": "rect",
@@ -1299,7 +1299,7 @@
       "filterable": 1,
       "ext": {
         "json": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/小学课堂.png",
-        "cookie": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
       },
       "style": {
         "type": "rect",
@@ -1316,7 +1316,7 @@
       "filterable": 1,
       "ext": {
         "json": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/初中课堂.png",
-        "cookie": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
       },
       "style": {
         "type": "rect",
@@ -1333,7 +1333,7 @@
       "filterable": 1,
       "ext": {
         "json": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/高中课堂.png",
-        "cookie": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
       },
       "style": {
         "type": "rect",

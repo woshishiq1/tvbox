@@ -1,7 +1,7 @@
 {
-  "spider": "./spider.jar",
+  "spider": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/spider.jar",
   "wallpaper": "",
-  "logo": "./logo.png",
+  "logo": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/logo.png",
   "warningText": "",
   "lives": [
     {
@@ -49,7 +49,7 @@
       "name": "🚀豆瓣｜嗷呜弹幕｜搜索自启",
       "key": "GoConfig",
       "type": 3,
-      "jar": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm.png",
       "api": "csp_GoConfigAmns",
       "indexs": 1,
       "searchable": 1,
@@ -536,7 +536,7 @@
         "ratio": 1.433
       },
       "ext": {
-        "cookie": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
       }
     },
     {
@@ -1107,7 +1107,7 @@
       },
       "ext": {
         "json": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/哔哩合集.png",
-        "cookie": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
+        "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
       }
     },
     {
