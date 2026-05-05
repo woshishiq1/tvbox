@@ -47,8 +47,8 @@ function findApiJson(dir) {
  */
 function fixPaths(obj) {
   // 定义加速后的 GitHub 根目录地址 (注意分支是 main)
-  const GITHUB_IY = "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy/";
-  const GITHUB_IY2 = "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/";
+  const GITHUB_IY = "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/";
+  const GITHUB_IY2 = "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/";
 
   if (typeof obj === "string") {
     // 1. 替换直接写死的 Gitee iy 仓库地址 -> GitHub cpu_iy
