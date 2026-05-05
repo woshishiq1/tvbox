@@ -1,7 +1,7 @@
 {
-  "spider": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/spider.jar",
+  "spider": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/spider.jar",
   "wallpaper": "",
-  "logo": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/logo.png",
+  "logo": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/logo.png",
   "warningText": "",
   "lives": [
     {
@@ -56,7 +56,7 @@
       "filterable": 0,
       "quickSearch": 1,
       "changeable": 0,
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/douban.png"
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/douban.png"
     },
     {
       "key": "木偶[盘]",
@@ -112,7 +112,7 @@
       "name": "❤小哩｜4K测试",
       "type": 3,
       "api": "csp_Bilimd",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/bl.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/bl.png",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -125,7 +125,7 @@
       "key": "奇奇",
       "name": "♨️奇奇｜4K线路",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/get.js",
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/get.js",
       "searchable": 1,
       "ext": {
         "host": "http://110.42.67.221:8003/",
@@ -139,7 +139,7 @@
       "name": "♨️蒙奇｜4K线路",
       "key": "AppV7Mtq",
       "type": 3,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm.png",
       "api": "csp_AppV7Amns",
       "searchable": 1,
       "filterable": 1,
@@ -151,7 +151,7 @@
       "name": "♨️粉猪｜4K线路",
       "key": "AppV7Fz",
       "type": 3,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm.png",
       "api": "csp_AppV7Amns",
       "searchable": 1,
       "filterable": 1,
@@ -176,7 +176,7 @@
       "key": "皮皮虾",
       "name": "♨️皮虾｜4K线路",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/ppx.py",
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ppx.py",
       "ext": "http://154.94.224.98:8762"
     },
     {
@@ -204,7 +204,7 @@
       "name": "♨️咸鱼｜4K线路",
       "key": "AppV7Xy",
       "type": 3,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm.png",
       "api": "csp_AppV7Amns",
       "searchable": 1,
       "filterable": 1,
@@ -216,7 +216,7 @@
       "name": "♨️追忆｜4K线路",
       "key": "NewNoxZy",
       "type": 3,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm1.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm1.png",
       "api": "csp_NewNoxAmns",
       "searchable": 1,
       "filterable": 1,
@@ -238,7 +238,7 @@
       "key": "fy",
       "name": "♨️枫叶｜4K线路",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/fy.py"
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/fy.py"
     },
     {
       "key": "金牌",
@@ -282,14 +282,14 @@
       "key": "爱看剧",
       "name": "🌀看剧｜1920",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/AppToV5.py",
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/AppToV5.py",
       "ext": "http://43.248.117.123:4680"
     },
     {
       "key": "追剧",
       "name": "🌀追剧｜1920",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/追剧.py",
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/追剧.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -299,7 +299,7 @@
       "name": "🌀柠檬｜1920",
       "key": "AppV7Xnm",
       "type": 3,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm.png",
       "api": "csp_AppV7Amns",
       "searchable": 1,
       "filterable": 1,
@@ -311,7 +311,7 @@
       "name": "🌀零七｜1920",
       "key": "AppV7Llq",
       "type": 3,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm.png",
       "api": "csp_AppV7Amns",
       "searchable": 1,
       "filterable": 1,
@@ -323,7 +323,7 @@
       "name": "🌀柿子｜1920",
       "key": "AppV7Xsz",
       "type": 3,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm.png",
       "api": "csp_AppV7Amns",
       "searchable": 1,
       "filterable": 1,
@@ -397,7 +397,7 @@
       "name": "🌀大师兄｜1920",
       "key": "AppV6Dxs",
       "type": 3,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm1.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm1.png",
       "api": "csp_AppV6Amns",
       "searchable": 1,
       "filterable": 1,
@@ -409,7 +409,7 @@
       "name": "🌀小黄人｜1920",
       "key": "AppV6Xhr",
       "type": 3,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm1.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm1.png",
       "api": "csp_AppV6Amns",
       "searchable": 1,
       "filterable": 1,
@@ -421,7 +421,7 @@
       "name": "🌀达人｜1920",
       "key": "AppV6Dr",
       "type": 3,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm1.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm1.png",
       "api": "csp_AppV6Amns",
       "searchable": 1,
       "filterable": 1,
@@ -433,7 +433,7 @@
       "name": "🌀柚子｜1920",
       "key": "AppV6Yz",
       "type": 3,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm1.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm1.png",
       "api": "csp_AppV6Amns",
       "searchable": 1,
       "filterable": 1,
@@ -445,7 +445,7 @@
       "name": "🌀特狗｜1920",
       "key": "AppV6Tg",
       "type": 3,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm1.png",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm1.png",
       "api": "csp_AppV6Amns",
       "searchable": 1,
       "filterable": 1,
@@ -484,7 +484,7 @@
       "key": "华数",
       "name": "🌀华数｜1920",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/华数.py",
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/华数.py",
       "changeable": 1
     },
     {
@@ -498,29 +498,29 @@
       "key": "小腾",
       "name": "🌀小腾｜1920",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/drpy2.min.js",
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/小腾.png"
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/小腾.png"
     },
     {
       "key": "小芒",
       "name": "🌀小芒｜1920",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/drpy2.min.js",
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/小芒.png"
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/小芒.png"
     },
     {
       "key": "小优",
       "name": "🌀小优｜1280",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/drpy2.min.js",
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/小优.png"
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/小优.png"
     },
     {
       "key": "小爱",
       "name": "🌀小爱｜1280",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/drpy2.min.js",
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/小爱.png"
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/小爱.png"
     },
     {
       "key": "小哩",
@@ -549,7 +549,7 @@
       "quickSearch": 1,
       "changeable": 1,
       "genre": "shortdrama",
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm1.png"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm1.png"
     },
     {
       "name": "🎬豪堪｜短剧",
@@ -560,7 +560,7 @@
       "filterable": 1,
       "quickSearch": 1,
       "changeable": 1,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm1.png"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm1.png"
     },
     {
       "name": "🎬围观｜短剧",
@@ -571,7 +571,7 @@
       "filterable": 1,
       "quickSearch": 1,
       "changeable": 1,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm1.png"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm1.png"
     },
     {
       "name": "🎬拜拜｜短剧",
@@ -582,7 +582,7 @@
       "filterable": 1,
       "quickSearch": 1,
       "changeable": 1,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm1.png"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm1.png"
     },
     {
       "name": "🎬喵喵｜短剧",
@@ -593,7 +593,7 @@
       "filterable": 1,
       "quickSearch": 1,
       "changeable": 1,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm1.png"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm1.png"
     },
     {
       "name": "🎬星星｜短剧",
@@ -604,14 +604,14 @@
       "filterable": 1,
       "quickSearch": 1,
       "changeable": 1,
-      "jar": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/awdm1.png"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/awdm1.png"
     },
     {
       "key": "快看",
       "name": "🎬快看｜短剧",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/drpy2.min.js",
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/jpdj.png"
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/jpdj.png"
     },
     {
       "key": "玩偶哥哥",
@@ -900,15 +900,15 @@
       "key": "路漫漫",
       "name": "🌈路漫漫｜动漫",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/drpy2.min.js",
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/路漫漫.png"
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/路漫漫.png"
     },
     {
       "key": "巴士动漫",
       "name": "🌈巴士｜动漫",
       "type": 3,
       "api": "csp_XYQHiker",
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/巴士动漫.png"
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/巴士动漫.png"
     },
     {
       "key": "方舟动漫",
@@ -962,9 +962,9 @@
       "key": "py_嘶哩嘶哩",
       "name": "🌈嘶哩｜动漫",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/skapp.py",
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/skapp.py",
       "ext": {
-        "host": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/api.png",
+        "host": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/api.png",
         "key": "ygcnbcznazmyrbdn",
         "iv": "6571230062143708"
       }
@@ -973,8 +973,8 @@
       "key": "爱动漫",
       "name": "🌈爱动漫｜动漫",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/drpy2.min.js",
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/爱动漫.png"
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/爱动漫.png"
     },
     {
       "key": "咕咕动漫",
@@ -1039,7 +1039,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/电影港.png"
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/电影港.png"
     },
     {
       "key": "电影天堂",
@@ -1090,7 +1090,7 @@
       "key": "哔哩直播",
       "name": "📺哔哩｜点播",
       "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/哔哩直播.py"
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/哔哩直播.py"
     },
     {
       "key": "哔哩合集",
@@ -1106,7 +1106,7 @@
         "ratio": 1.433
       },
       "ext": {
-        "json": "https://ghfast.top/https://raw.githubusercontent.com/woshishiq1/hipy-drpy/main/cpu_iy2/lib/哔哩合集.png",
+        "json": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/哔哩合集.png",
         "cookie": "http://gh.llkk.cc/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
       }
     },
