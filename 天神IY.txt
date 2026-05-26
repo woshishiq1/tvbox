@@ -207,13 +207,6 @@
       "timeout": 10
     },
     {
-      "key": "橘子py",
-      "name": "♨️橘子｜4K线路",
-      "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/jd4k.py",
-      "ext": "https://dmc.yy-fun.cc/feiapp"
-    },
-    {
       "key": "首发",
       "name": "♨️首发｜4K线路",
       "type": 3,
