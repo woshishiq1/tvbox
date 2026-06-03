@@ -57,10 +57,6 @@
             "name": "本地【真心】"
         },
         {
-            "url": "clan://localhost/0本地库【ff】/本地【DG音乐台】/api.json",
-            "name": "本地【DG音乐台】"
-        },
-        {
             "url": "clan://localhost/0本地库【ff】/本地【少儿教育】/api.json",
             "name": "本地【少儿教育】"
         },
@@ -97,10 +93,6 @@
             "name": "王二小"
         },
         {
-            "url": "https://9877.kstore.space/ONE/one.json",
-            "name": "潇洒"
-        },
-        {
             "url": "http://www.饭太硬.net/tv",
             "name": "饭太硬"
         },
@@ -115,6 +107,10 @@
         {
             "url": "http://tv.nxog.top/m/",
             "name": "讴歌"
+        },
+        {
+            "url": "https://9877.kstore.space/ONE/one.json",
+            "name": "潇洒"
         },
         {
             "url": "https://www.252035.xyz/p/jsm.json",
