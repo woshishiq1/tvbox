@@ -48,7 +48,7 @@
   "sites": [
     {
       "key": "配置中心",
-      "name": "🌐配置中心｜8.03版",
+      "name": "🌐配置中心｜8.05版",
       "type": 3,
       "api": "csp_Config",
       "searchable": 0,
@@ -97,36 +97,6 @@
       }
     },
     {
-      "key": "映视界",
-      "name": "❤视界｜4K秒挂",
-      "type": 4,
-      "api": "http://bu.970088.xyz/video/映视界?platform=ysc&token=688988"
-    },
-    {
-      "key": "木偶1",
-      "name": "❤木偶｜4K秒挂",
-      "type": 4,
-      "api": "http://bu.970088.xyz/video/mogg?platform=ysc&token=688988"
-    },
-    {
-      "key": "玩偶1",
-      "name": "❤玩偶｜4K秒挂",
-      "type": 4,
-      "api": "http://bu.970088.xyz/video/wogg?platform=ysc&token=688988"
-    },
-    {
-      "key": "讴歌1",
-      "name": "❤讴歌｜4K秒挂",
-      "type": 4,
-      "api": "http://bu.970088.xyz/video/ouge?platform=ysc&token=688988"
-    },
-    {
-      "key": "虎斑1",
-      "name": "❤虎斑｜4K秒挂",
-      "type": 4,
-      "api": "http://bu.970088.xyz/video/huban?platform=ysc&token=688988"
-    },
-    {
       "key": "CO4K",
       "name": "❤咖啡｜4K测试",
       "type": 4,
@@ -158,6 +128,23 @@
       "type": 3,
       "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/藤藤.png"
+    },
+    {
+      "key": "咕噜",
+      "name": "♨️咕噜｜4K线路",
+      "type": 3,
+      "playerType": 2,
+      "api": "csp_App99",
+      "ext": {
+        "host": "http://103.45.132.22:19987/app/bn",
+        "LoginPath": "/app/log",
+        "appkey": "8a8e8ff2051223e96c4f05256d3cb795",
+        "versionName": "2.0.",
+        "name": "咕噜咕噜",
+        "package": "com.muyue.tool.new1",
+        "buildNumber": "2001",
+        "buildSignature": "cada9080ddc2a0e8a89c4d0cbbcfbbbf1e562e2a90a4eb0003029254bc632f2a"
+      }
     },
     {
       "key": "马猴影视",
@@ -218,12 +205,6 @@
       }
     },
     {
-      "key": "皮皮虾",
-      "name": "♨️皮虾｜4K秒挂",
-      "type": 4,
-      "api": "http://bu.970088.xyz/video/皮皮虾?platform=ysc&token=688988"
-    },
-    {
       "key": "秒看",
       "name": "♨️秒看｜4K线路",
       "type": 3,
@@ -273,18 +254,8 @@
       "key": "枫叶影视",
       "name": "♨️枫叶｜4K线路",
       "type": 3,
-      "api": "csp_XBPQ",
-      "ext": {
-        "请求头": "手机",
-        "简介": "text cor3\">[*],&&</div>",
-        "图片": "data-src=\"&&\"[替换:amp;>>空]",
-        "主页url": "https://www.cd-zj.com/label/qq.html",
-        "副标题": "ft2\">&&</i>",
-        "线路数组": "<i class=\"fa ds-dianying\">&&</span>",
-        "播放数组": "anthology-list-play size\">&&</ul>",
-        "分类url": "https://www.cd-zj.com/cupfox-list/{cateId}-{area}--{class}-----{catePg}---{year}.html",
-        "分类": "电影$1#电视剧$2#综艺$3#动漫$4#短剧$5"
-      }
+      "api": "csp_FengYe",
+      "ext": "https://www.vip1949.com/"
     },
     {
       "key": "歪比巴卜",
@@ -994,6 +965,26 @@
       "ext": {
         "json": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/哔哩合集.png",
         "cookie": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/blc.png"
+      }
+    },
+    {
+      "key": "兔小贝",
+      "name": "📚兔小贝｜教育",
+      "type": 3,
+      "api": "csp_TuXiaoBei",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      }
+    },
+    {
+      "key": "贝乐虎",
+      "name": "📚贝乐虎｜教育",
+      "type": 3,
+      "api": "csp_BeiLeHu",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
       }
     },
     {
