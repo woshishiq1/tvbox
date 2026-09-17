@@ -9,7 +9,7 @@
       "name": "测试1",
       "type": 0,
       "playerType": 2,
-      "url": "https://d.kstore.dev/download/14505/ds.png"
+      "url": "https://14505.kstore.space/ds.png"
     },
     {
       "name": "测试2",
@@ -48,7 +48,7 @@
     },
     {
       "key": "配置中心",
-      "name": "🌐配置中心｜9.03版",
+      "name": "🌐配置中心｜9.17版",
       "type": 3,
       "api": "csp_Config",
       "searchable": 0,
@@ -141,28 +141,13 @@
       "ext": {
         "appName": "橘汁",
         "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr8SzZhjYy+rsya1K09t8d2K50pWFoBkgUqMpKOiW+3IEVKd4eTdvg9RSOjQ82kypL6R9BnsmrS1V8s4PVDwjQbUtYhTPPC9Hz16qY7rpD6m0d2vr09/UpWQ5uOy9PR0QTrsioveZ+DIe9jc3C+zBCu/kZSY/R8stwJoiitki3gwIDAQAB",
-        "dataKey": "OW1WBLFZCLJ0WTNJCDMYEGXWYVP3PT0=",
+        "dataKey": "OW1WBLFZCLJ0WTNJQMRSZ2DYSGNBPT0=",
         "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
         "pkg": "com.mxj.wylcjbxyx",
         "host": "",
         "site": "https://123-1349250429.cos.ap-shanghai.myqcloud.com/app.txt",
-        "version": "3.0.2.3",
+        "version": "3.0.2.4",
         "decrypt": "1"
-      }
-    },
-    {
-      "key": "半日99",
-      "name": "♨️半日｜4K线路",
-      "type": 3,
-      "api": "csp_App99",
-      "ext": {
-        "host": "http://103.217.190.91:19987/app/bn",
-        "appkey": "24d625a8a29b4700a1a294c6f3b29e2c",
-        "versionName": "3.5.8",
-        "name": "半日闲",
-        "package": "com.yf.lelian",
-        "buildNumber": "2001",
-        "buildSignature": "A40DA80A59D170CAA950CF15C18C454D47A39B26989D8B640ECD745BA71BF5DC"
       }
     },
     {
@@ -183,29 +168,10 @@
       }
     },
     {
-      "key": "怀桑",
-      "name": "♨️怀桑｜4K线路",
-      "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/get.js",
-      "ext": {
-        "host": "http://110.42.67.130:1226",
-        "key": "kj37zs29q22jk96t",
-        "init": "V122",
-        "api": 2,
-        "ua": "okhttp/3.10.0"
-      }
-    },
-    {
       "key": "多多",
       "name": "♨️多多｜4K线路",
       "type": 3,
       "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/dd.py"
-    },
-    {
-      "key": "漫闪",
-      "name": "♨️漫闪｜4K线路",
-      "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/ms.py"
     },
     {
       "key": "剧圈",
@@ -221,6 +187,28 @@
         "buildNumber": "2002",
         "buildSignature": "054FA8DDA4319C6B6A9B954CA5777541C993F00B1B0BD4394F7EDE48184C4594"
       }
+    },
+    {
+      "key": "半日99",
+      "name": "♨️半日｜4K线路",
+      "type": 3,
+      "api": "csp_App99",
+      "ext": {
+        "host": "http://103.217.190.91:19987/app/bn",
+        "appkey": "24d625a8a29b4700a1a294c6f3b29e2c",
+        "versionName": "3.5.8",
+        "name": "半日闲",
+        "package": "com.yf.lelian",
+        "buildNumber": "2001",
+        "buildSignature": "A40DA80A59D170CAA950CF15C18C454D47A39B26989D8B640ECD745BA71BF5DC"
+      }
+    },
+    {
+      "key": "枫叶影视",
+      "name": "♨️枫叶｜4K线路",
+      "type": 3,
+      "api": "csp_FengYe",
+      "ext": "https://www.vip1949.com/"
     },
     {
       "key": "高清点播",
@@ -259,19 +247,6 @@
       }
     },
     {
-      "key": "云朵",
-      "name": "♨️云朵｜4K线路",
-      "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/yd.py"
-    },
-    {
-      "key": "歪比巴卜",
-      "name": "♨️巴卜｜4K线路",
-      "type": 3,
-      "playerType": 2,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/yb.py"
-    },
-    {
       "key": "瓜子影视",
       "name": "🌀瓜子｜3K线路",
       "type": 3,
@@ -295,24 +270,6 @@
       "name": "🌀个影｜1920",
       "type": 3,
       "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/gy.js"
-    },
-    {
-      "key": "界影视",
-      "name": "🌀界影｜1920",
-      "type": 3,
-      "api": "csp_HkybSpider",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "壹壹影视",
-      "name": "🌀壹壹｜1920",
-      "type": 3,
-      "api": "csp_YiYs",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
     },
     {
       "key": "天堂",
@@ -375,28 +332,6 @@
         "version": "1.0.0.3",
         "decrypt": "0"
       }
-    },
-    {
-      "key": "雄鹰",
-      "name": "🌀雄鹰｜1920",
-      "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/get.js",
-      "ext": {
-        "host": "https://xinlanyinghb.oss-cn-wuhan-lr.aliyuncs.com/xly.txt",
-        "key": "ca94b06ca359d80e",
-        "init": "V120",
-        "api": 2,
-        "ua": "okhttp/3.10.0"
-      },
-      "categories": [
-        "动漫",
-        "电视剧",
-        "电影",
-        "综艺",
-        "短剧",
-        "少儿",
-        "纪录片"
-      ]
     },
     {
       "key": "热播影视",
@@ -474,6 +409,13 @@
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 1
+    },
+    {
+      "key": "红果短剧",
+      "name": "🎬红果｜短剧",
+      "type": 3,
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/hgdj.py",
+      "genre": "shortdrama"
     },
     {
       "key": "七猫短剧",
