@@ -85,7 +85,7 @@
             "name": "王二小"
         },
         {
-            "url": "http://www.饭太硬.net/tv",
+            "url": "http://www.饭太硬.cc/tv",
             "name": "饭太硬"
         },
         {
@@ -95,10 +95,6 @@
         {
             "url": "http://hb.小虎斑.site:25252/仅供测试",
             "name": "小虎斑"
-        },
-        {
-            "url": "https://gh-proxy.org/https://raw.githubusercontent.com/ggrrttyyiii/CatVodSpider/refs/heads/main/json/demo.json",
-            "name": "小米"
         },
         {
             "url": "https://hk.gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
