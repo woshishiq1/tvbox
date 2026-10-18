@@ -38,7 +38,7 @@
   "sites": [
     {
       "key": "配置中心",
-      "name": "🌐配置中心｜10.03版｜先扫网盘才可看自扫站源",
+      "name": "🌐配置中心｜10.17版｜先扫网盘才可看自扫站源",
       "type": 3,
       "api": "csp_Config",
       "searchable": 0,
@@ -91,13 +91,6 @@
       }
     },
     {
-      "key": "藤藤",
-      "name": "❤藤藤｜4K测试",
-      "type": 3,
-      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
-      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/藤藤.png"
-    },
-    {
       "key": "bl",
       "name": "❤小哩｜4K测试",
       "type": 3,
@@ -145,11 +138,43 @@
       }
     },
     {
-      "key": "枫叶影视",
-      "name": "♨️枫叶｜4K线路",
+      "name": "♨️粉猪｜4K线路",
+      "key": "AppV7Fz",
       "type": 3,
-      "api": "csp_FengYe",
-      "ext": "https://www.vip1949.com/"
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/aw.png",
+      "api": "csp_AppV7Amns",
+      "ext": "AppV7Fz"
+    },
+    {
+      "name": "♨️咸鱼｜4K线路",
+      "key": "AppV7Xy",
+      "type": 3,
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/aw.png",
+      "api": "csp_AppV7Amns",
+      "ext": "AppV7Xy"
+    },
+    {
+      "name": "♨️太奇｜4K线路",
+      "key": "AppV7Mtq",
+      "type": 3,
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/aw.png",
+      "api": "csp_AppV7Amns",
+      "ext": "AppV7Mtq"
+    },
+    {
+      "key": "半日99",
+      "name": "♨️半日｜4K线路",
+      "type": 3,
+      "api": "csp_App99",
+      "ext": {
+        "host": "http://103.217.190.91:19987/app/bn",
+        "appkey": "24d625a8a29b4700a1a294c6f3b29e2c",
+        "versionName": "3.5.8",
+        "name": "半日闲",
+        "package": "com.yf.lelian",
+        "buildNumber": "2001",
+        "buildSignature": "A40DA80A59D170CAA950CF15C18C454D47A39B26989D8B640ECD745BA71BF5DC"
+      }
     },
     {
       "key": "高清点播",
@@ -165,6 +190,36 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
+    },
+    {
+      "key": "蓝鹰",
+      "name": "♨️蓝鹰｜4K线路",
+      "type": 3,
+      "api": "csp_AppQi",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": {
+        "url": "http://103.217.190.91:5566",
+        "dataKey": "hagYExMdMkeWfemK",
+        "dataIv": "hagYExMdMkeWfemK",
+        "init": "initV122",
+        "ua": "okhttp/3.10.0"
+      }
+    },
+    {
+      "key": "蓝鸟",
+      "name": "♨️蓝鸟｜4K线路",
+      "type": 3,
+      "api": "csp_AppQi",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": "https://lanyingjisu.oss-cn-wuhan-lr.aliyuncs.com/lyjszx.txt",
+        "dataKey": "oW5UxZ5kWVr1DI69",
+        "dataIv": "oW5UxZ5kWVr1DI69",
+        "init": "initV122",
+        "ua": "okhttp/3.10.0"
+      }
     },
     {
       "key": "瓜子影视",
@@ -206,51 +261,6 @@
       "name": "🌀多多｜1920",
       "type": 3,
       "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/dd.py"
-    },
-    {
-      "key": "半日99",
-      "name": "🌀半日｜1920",
-      "type": 3,
-      "api": "csp_App99",
-      "ext": {
-        "host": "http://103.217.190.91:19987/app/bn",
-        "appkey": "24d625a8a29b4700a1a294c6f3b29e2c",
-        "versionName": "3.5.8",
-        "name": "半日闲",
-        "package": "com.yf.lelian",
-        "buildNumber": "2001",
-        "buildSignature": "A40DA80A59D170CAA950CF15C18C454D47A39B26989D8B640ECD745BA71BF5DC"
-      }
-    },
-    {
-      "key": "蓝鹰",
-      "name": "🌀蓝鹰｜1920",
-      "type": 3,
-      "api": "csp_AppQi",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": {
-        "url": "http://103.217.190.91:5566",
-        "dataKey": "hagYExMdMkeWfemK",
-        "dataIv": "hagYExMdMkeWfemK",
-        "init": "initV122",
-        "ua": "okhttp/3.10.0"
-      }
-    },
-    {
-      "key": "蓝鸟",
-      "name": "🌀蓝鸟｜1920",
-      "type": 3,
-      "api": "csp_AppQi",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": {
-        "site": "https://lanyingjisu.oss-cn-wuhan-lr.aliyuncs.com/lyjszx.txt",
-        "dataKey": "oW5UxZ5kWVr1DI69",
-        "dataIv": "oW5UxZ5kWVr1DI69",
-        "init": "initV122",
-        "ua": "okhttp/3.10.0"
-      }
     },
     {
       "key": "天堂",
@@ -315,6 +325,15 @@
       }
     },
     {
+      "key": "番茄影视",
+      "name": "🌀番茄｜1920",
+      "type": 3,
+      "api": "csp_AppFQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
       "key": "金牌影视",
       "name": "🌀金牌｜1920",
       "type": 3,
@@ -351,6 +370,13 @@
       "type": 3,
       "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/华数.py",
       "changeable": 1
+    },
+    {
+      "key": "藤藤",
+      "name": "🌀藤藤｜1920",
+      "type": 3,
+      "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
+      "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/藤藤.png"
     },
     {
       "key": "茫茫",
@@ -532,6 +558,25 @@
       }
     },
     {
+      "key": "蜡笔",
+      "name": "🌐蜡笔｜4K自扫",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "https://www.fmcf.fun",
+          "https://www.mmpanpan.site",
+          "http://tvpanpan.site",
+          "http://www.tvpanpan.site"
+        ]
+      },
+      "timeout": 60
+    },
+    {
       "key": "花卷",
       "name": "🌐花卷｜4K自扫",
       "type": 3,
@@ -639,22 +684,25 @@
       "api": "csp_4KZhinan",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1,
+      "ext": {
+        "site": [
+          "https://4kzn.cc"
+        ]
+      }
     },
     {
-      "key": "双星99",
-      "name": "🌈双星｜动漫",
+      "key": "小丑",
+      "name": "🌐小丑｜4K自扫",
       "type": 3,
-      "api": "csp_App99",
+      "api": "csp_4KZhinan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
       "ext": {
-        "host": "http://111.180.139.119:19987/app/bn",
-        "LoginPath": "/app/log",
-        "appkey": "f66f65db127e48449f073c2c6eb0f993",
-        "versionName": "6.4.9",
-        "name": "双子星动漫",
-        "package": "com.haiwang.liangxia.my.ym",
-        "buildNumber": "2001",
-        "buildSignature": "A40DA80A59D170CAA950CF15C18C454D47A39B26989D8B640ECD745BA71BF5DC"
+        "site": [
+          "https://4kxc.com"
+        ]
       }
     },
     {
@@ -662,6 +710,9 @@
       "name": "🌈去看｜动漫",
       "type": 3,
       "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
       "ext": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/去看吧.png"
     },
     {
@@ -715,6 +766,18 @@
       "name": "📻听歌｜音乐",
       "type": 3,
       "api": "https://ghfast.top/https://raw.githubusercontent.com/IY-CPU/IY/main/lib/tlm.js"
+    },
+    {
+      "key": "听友听书",
+      "name": "📻听友｜听书",
+      "type": 3,
+      "api": "csp_TingTingyou",
+      "searchable": 1,
+      "quickSearch": 0,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      }
     },
     {
       "key": "瓜子体育",
